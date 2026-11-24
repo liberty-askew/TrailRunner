@@ -1,0 +1,9 @@
+{
+  "name": "ridgeline",
+  "private": true,
+  "description": "Ridgeline training app – tests only; the app itself has no build step",
+  "scripts": {
+    "test": "node --experimental-strip-types --test \"tests/*.test.{js,mjs}\""
+  },
+  "engines": { "node": ">=22.6" }
+}

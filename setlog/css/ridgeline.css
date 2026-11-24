@@ -1,0 +1,33 @@
+/* Ridgeline theme layer for Setlog: overrides colour tokens only, loaded after app.css. */
+:root {
+  --bg: #F6F7FB; --surface: #FFFFFF; --surface-2: #EEF1F8; --line: #DDE1EE;
+  --ink: #14162B; --ink-2: #4A4F6B; --ink-3: #6B7090;
+  --accent: #2E4BFF; --accent-ink: #FFFFFF; --accent-soft: #DCE2FF;
+  --done: #0FA765; --done-soft: #DDF5EA; --danger: #D61F55; --chart-muted: #A3A8C2;
+  --cat-strength: #2E4BFF; --cat-calisthenics: #7B33F0; --cat-stretch: #0096AD; --cat-cardio: #0FA765; --cat-rehab: #F0215F;
+  --heat-lo: #DCE2FF; --heat-hi: #1B2FB8;
+  --gold: #B88600; --gold-soft: #FFF3CC;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1022; --surface: #181B33; --surface-2: #21254A; --line: #2C3157;
+    --ink: #F2F3FA; --ink-2: #B9BDD6; --ink-3: #8C91B0;
+    --accent: #7088FF; --accent-ink: #0E1022; --accent-soft: #262B52;
+    --done: #3DDC97; --done-soft: #15302A; --danger: #FF5C8D; --chart-muted: #5D6285;
+    --cat-strength: #7088FF; --cat-calisthenics: #A97BFF; --cat-stretch: #2FD3EA; --cat-cardio: #3DDC97; --cat-rehab: #FF5C8D;
+    --heat-lo: #262B52; --heat-hi: #8EA0FF;
+    --gold: #FFC21A; --gold-soft: #3A3215;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1022; --surface: #181B33; --surface-2: #21254A; --line: #2C3157;
+  --ink: #F2F3FA; --ink-2: #B9BDD6; --ink-3: #8C91B0;
+  --accent: #7088FF; --accent-ink: #0E1022; --accent-soft: #262B52;
+  --done: #3DDC97; --done-soft: #15302A; --danger: #FF5C8D; --chart-muted: #5D6285;
+  --cat-strength: #7088FF; --cat-calisthenics: #A97BFF; --cat-stretch: #2FD3EA; --cat-cardio: #3DDC97; --cat-rehab: #FF5C8D;
+  --heat-lo: #262B52; --heat-hi: #8EA0FF;
+  --gold: #FFC21A; --gold-soft: #3A3215;
+}
+/* "Ridgeline" link at the start of the tab bar */
+.tabbar a.rl-back { color: var(--accent); }
+.tabbar a.rl-back svg { fill: var(--accent); stroke: none; }
